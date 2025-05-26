@@ -1,0 +1,11 @@
+Kreirati novi Java projekt koji će sadržavati tri perzistentne klase:
+„Author” s varijablama „id” (Long), „name” (String), set objekata klase „Book” označenog s „@OneToMany” anotacijom i set objekata klase „Publisher” označenih s „@ManyToMany” anotacijom
+„Book” s varijablama „id” (Long), „title” (String) i „author” tipa „Author” označenog s „@ManyToOne” anotacijom
+„Publisher” s varijablama „id” (Long), „name” (String) i set objekata klase „Book” 
+
+Kreirati odgovarajuću konfiguraciju u datoteci „hibernate.cfg.xml”.
+Iskoristiti klasu „HibernateUtil” iz prošlih vježbi.
+Kreirati klasu s „main” metodom u kojoj će se pozivati metode za kreiranje po dva entiteta svih kreiranih klasa i spremiti ih.
+Napisati metodu koja će dohvaćati sve autore s njihovim knjigama te ih ispisati u konzolu.
+Napisati metodu za ažuriranje naslova knjiga.
+Napisati metodu za brisanje knjige.
